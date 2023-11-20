@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="48ae8de3-8df8-4b32-a660-f5a31bdd696c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/spengergasse/Pirat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/spengergasse/Pirat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/spengergasse/Schiff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/spengergasse/Schiff.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/at/spengergasse/TestPirat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/at/spengergasse/TestPirat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/at/spengergasse/TestSchiff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/at/spengergasse/TestSchiff.java" afterDir="false" />
-    </list>
+    <list default="true" id="48ae8de3-8df8-4b32-a660-f5a31bdd696c" name="Changes" comment="first commit piraten" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -136,7 +129,7 @@
       <option name="presentableId" value="Default" />
       <updated>1700476057434</updated>
       <workItem from="1700476058826" duration="2171000" />
-      <workItem from="1700491446745" duration="6990000" />
+      <workItem from="1700491446745" duration="7281000" />
     </task>
     <task id="LOCAL-00001" summary="first commit piraten">
       <option name="closed" value="true" />
@@ -146,7 +139,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700477061178</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="first commit piraten">
+      <option name="closed" value="true" />
+      <created>1700499267121</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1700499267121</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
