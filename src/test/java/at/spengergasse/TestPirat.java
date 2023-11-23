@@ -1,16 +1,20 @@
 package at.spengergasse;
 
 public class TestPirat {
-    
-    
-    public void testKielholen() {
-        
-        Pirat p1 = new Pirat();
-        p1.kielholen();
-        
-        // Funktioniert die Methode korrekt, so wird nach dem Kielholen eines 
-        // Piraten ohne Holzbein 90 erwartet.
-        System.out.println( "Erwartet: 90; Ist: " +  p1.getGesundheit() );
+    /*public static void main(String[] args) {
+        Pirat jack = new Pirat("Jack Sparrow", 50, true);
+        jack.print();
+
+        jack.trinken('r');
+        jack.kielholen();
+        jack.print();
+    }*/
+
+    public static void main(String[] args) {
+        Pirat brook = new Pirat("Brook", 80, false);
+        brook.print();
+
+        brook.trinken('r');
+        brook.print();
     }
-    
 }
