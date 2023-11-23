@@ -33,7 +33,7 @@ public class Pirat {
         if (gesundheit >= 0 && gesundheit <= 100) {
             this.gesundheit = gesundheit;
         } else {
-            System.out.println("Yo-ho-ho - Gueltiger Bereich fuer die Gesundheit: 0 bis 100 Prozent");
+            throw new IllegalArgumentException("Yo-ho-ho - Gueltiger Bereich fuer die Gesundheit: 0 bis 100 Prozent");
         }
     }
 
@@ -85,7 +85,13 @@ public class Pirat {
             gesundheitInfo = "X - in der Kiste";
         }
 
-        String holzbeinInfo = holzbein ? "Holzbeiner" : "Zweifüßer";
+        String holzbeinInfo;
+        if (holzbein) {
+            holzbeinInfo = "Holzbeiner";
+        }  else {
+                holzbeinInfo = "Zweifüßler";
+            }
+
 
         return "`Aye` - Trunkenbold " + name + " meldet sich an Board!\n" +
                 gesundheitInfo + ", " + holzbeinInfo;

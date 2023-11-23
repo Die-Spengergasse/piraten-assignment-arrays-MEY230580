@@ -17,4 +17,7 @@ public class TestPirat {
         brook.trinken('r');
         brook.print();
     }
+
+
 }
+
