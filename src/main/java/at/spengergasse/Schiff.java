@@ -6,23 +6,15 @@ public class Schiff {
     private int kanonen;
     private char typ;
     private Pirat kapitaen;
-    private Pirat pirat2;
-    private Pirat pirat3;
-    private Pirat pirat4;
-    private Pirat pirat5;
-    private Pirat pirat6;
+    private Pirat[] piraten;
+
 
     // Konstruktor
     public Schiff(char typ) {
         setTyp(typ);
-        kanonenKlarmachen();
     }
 
     // Getter und Setter-Methoden
-    public int getKanonen() {
-        return kanonen;
-    }
-
     public char getTyp() {
         return typ;
     }
@@ -31,7 +23,7 @@ public class Schiff {
         if (typ == 's' || typ == 'b' || typ == 'f' || typ == 'g') {
             this.typ = typ;
         } else {
-            System.out.println("Harr! Der Schiffstyp " + typ + " ist zu raeudig!");
+            throw new IllegalArgumentException("Harr! Der Schiffstyp " + typ + " ist zu raeudig!");
         }
     }
 
@@ -55,39 +47,44 @@ public class Schiff {
         }
     }
 
+
+
+    public int getKanonen() {
+        return this.kanonen;
+    }
+
     // Methode zum Anheuern eines Piraten
     public void anheuern(Pirat pirat) {
         if (kapitaen == null) {
-            kapitaen = pirat;
-        } else if (pirat2 == null) {
-            pirat2 = pirat;
-        } else if (pirat3 == null) {
-            pirat3 = pirat;
-        } else if (pirat4 == null) {
-            pirat4 = pirat;
-        } else if (pirat5 == null) {
-            pirat5 = pirat;
-        } else if (pirat6 == null) {
-            pirat6 = pirat;
-        } else {
-            System.out.println("Arrg! Kein Grog mehr fuer den neuen Trunkenbold! Voll besetzt! Typ= " + typ);
+            this.kapitaen = pirat;
+            this.kapitaen.setSchiff(this);
+            return;
         }
+        for (int i = 0; i < piraten.length; i++) {
+            if (piraten[i] == null) {
+                piraten[i] = pirat;
+                piraten[i].setSchiff(this);
+                return;
+            }
+        }
+        throw new IllegalArgumentException("Arrg! Kein Grog mehr fuer den neuen Trunkenbold! Voll besetzt! Typ= " + typ);
     }
 
     // Methode zur Ausgabe der Informationen über das Schiff und die Besatzung
     public String toString() {
-        StringBuilder result = new StringBuilder();
-        result.append("******************************************\n");
-        result.append("Crew ").append(getSchiffBezeichnung()).append(": ").append("(").append(getMaxBesatzung()).append(")\n");
-        result.append("-----------------------\n");
-        result.append(kapitaen.toString()).append("\n");
-        if (pirat2 != null) result.append(pirat2.toString()).append("\n");
-        if (pirat3 != null) result.append(pirat3.toString()).append("\n");
-        if (pirat4 != null) result.append(pirat4.toString()).append("\n");
-        if (pirat5 != null) result.append(pirat5.toString()).append("\n");
-        if (pirat6 != null) result.append(pirat6.toString()).append("\n");
-        result.append("******************************************");
-        return result.toString();
+        String rw;
+        switch (this.getTyp()) {
+            case 's' -> rw = "Crew Schaluppe (3): " + "\n" + "______________________" + "\n";
+            case 'b' -> rw = "Brigg (4): " + "\n" + "______________________" + "\n";
+            case 'f' -> rw = "Frigatte (5): " + "\n" + "______________________" + "\n";
+            case 'g' -> rw = "Galeone (6): " + "\n" + "______________________" + "\n";
+            default -> throw new IllegalArgumentException("Falsche Bezeichnung!");
+        } ;
+        rw += this.kapitaen.toString() + "\n";
+        for (int i = 0; i < piraten.length; i++) {
+            rw += piraten[i].toString();
+        }
+        return rw;
     }
 
     // Methode zur Ausgabe der Schiffsinformationen

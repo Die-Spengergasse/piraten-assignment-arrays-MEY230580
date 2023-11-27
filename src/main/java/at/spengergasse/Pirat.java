@@ -4,6 +4,7 @@ public class Pirat {
     private String name;
     private int gesundheit;
     private boolean holzbein;
+    private Schiff schiff;
 
     // Konstruktor
     public Pirat(String name, int gesundheit, boolean holzbein) {
@@ -12,13 +13,22 @@ public class Pirat {
         this.holzbein = holzbein;
     }
 
+    public Schiff getSchiff() {
+        return schiff;
+    }
+
+    public void setSchiff(Schiff schiff) {
+        this.schiff = schiff;
+    }
+
+
     // Getter und Setter-Methoden
     public String getName() {
         return name;
     }
 
     public void setName(String name) {
-        if (name == null) {
+        if (name == null || name.isEmpty()) {
             throw new IllegalArgumentException("Arrgh! Keinen Namen fuer den alten Seebaeren uebergeben!");
         } else {
             this.name = name;

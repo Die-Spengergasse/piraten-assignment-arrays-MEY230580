@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="48ae8de3-8df8-4b32-a660-f5a31bdd696c" name="Changes" comment="first commit piraten">
+    <list default="true" id="48ae8de3-8df8-4b32-a660-f5a31bdd696c" name="Changes" comment="Überarbeitung Klasse Pirat">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/at/spengergasse/Pirat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/spengergasse/Pirat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/at/spengergasse/TestPirat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/at/spengergasse/TestPirat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/spengergasse/Schiff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/spengergasse/Schiff.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +136,8 @@
       <workItem from="1700491446745" duration="7306000" />
       <workItem from="1700663138487" duration="11000" />
       <workItem from="1700746524384" duration="372000" />
-      <workItem from="1700749328684" duration="3575000" />
+      <workItem from="1700749328684" duration="3798000" />
+      <workItem from="1701099173369" duration="2976000" />
     </task>
     <task id="LOCAL-00001" summary="first commit piraten">
       <option name="closed" value="true" />
@@ -170,7 +171,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700746554234</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Überarbeitung Klasse Pirat">
+      <option name="closed" value="true" />
+      <created>1700755487665</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1700755487665</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,7 +187,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit piraten" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit piraten" />
+    <MESSAGE value="Überarbeitung Klasse Pirat" />
+    <option name="LAST_COMMIT_MESSAGE" value="Überarbeitung Klasse Pirat" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
